@@ -23,11 +23,21 @@ containerElement.innerHTML +=
 }
 
 const handleSearchBar = () => {
-    pokemonArray.filter((input) => {
         console.log(searchBar.value)
-    })
-}
+    }
 
+// trying extension
+// pokemonArray.forEach((pokemon) => {
+//     if(pokemon.name.includes(searchBar.value)) {
+//         containerElement.innerHTML += 
+//     `<div class="card">
+//         <img class="card__image" src="${pokemon.sprite}" alt="">
+//         <div class="card__content">
+//             <h1 class="card__heading">${pokemon.name.charAt(0).toUpperCase()}${pokemon.name.slice(1)}</h1>
+//             <p class="card__text" >${pokemon.name.charAt(0).toUpperCase()}${pokemon.name.slice(1)} (#${pokemon.id}) is a ${pokemon.types.join(" & ")} type pokemon.</p>
+//         </div>
+//     </div>`;
+//     }})
 
 searchBar.addEventListener("input",handleSearchBar)
 
