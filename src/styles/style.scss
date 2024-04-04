@@ -9,7 +9,14 @@
 body {
   background-color: $color-background;
   padding: 1rem;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
 }
+
 
 .card-container {
   margin-top: 1rem;
@@ -22,9 +29,11 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $color-foreground;
-    max-width: 200px;
+    width: 150px;
     border-radius: 3px;
     overflow: hidden;
+    justify-content: center;
+    text-align: left;
 
     > .card__image {
       transform: scale(1.25);
